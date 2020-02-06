@@ -92,6 +92,11 @@ const Home = () => {
       </Section>
       <Section id="projects" variant="secondary">
         <H2>Projects</H2>
+        <H3>
+          Checkout some of my projects involving either Web or Mobile
+          development
+        </H3>
+        <br />
 
         {projects.map(project => (
           <Row key={project.link}>
