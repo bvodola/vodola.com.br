@@ -1,6 +1,7 @@
 import React from "react"
 import { Layout, Section, Row, Col } from "src/components/ui"
 import { H2, H3, P } from "src/components/text"
+import { ProjectImages } from "src/components/sections"
 
 export default () => (
   <Layout>
@@ -40,28 +41,10 @@ export default () => (
     <Section variant="secondary">
       <H3>App Screens</H3>
       <br />
-      <Row stacked>
-        <Col>
-          <a href="/img/projects/memo-meister/app1.jpg" target="_blank">
-            <img src="/img/projects/memo-meister/app1.jpg" alt="" />
-          </a>
-        </Col>
-        <Col>
-          <a href="/img/projects/memo-meister/app2.jpg" target="_blank">
-            <img src="/img/projects/memo-meister/app2.jpg" alt="" />
-          </a>
-        </Col>
-        <Col>
-          <a href="/img/projects/memo-meister/app3.jpg" target="_blank">
-            <img src="/img/projects/memo-meister/app3.jpg" alt="" />
-          </a>
-        </Col>
-        <Col>
-          <a href="/img/projects/memo-meister/app4.jpg" target="_blank">
-            <img src="/img/projects/memo-meister/app4.jpg" alt="" />
-          </a>
-        </Col>
-      </Row>
+      <ProjectImages
+        project_name="memo-meister"
+        images={["app1", "app2", "app3", "app4"]}
+      />
     </Section>
   </Layout>
 )

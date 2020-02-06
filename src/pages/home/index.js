@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import scrollTo from "gatsby-plugin-smoothscroll"
-import ContactSection from "src/components/ContactSection"
 
 import Image from "src/components/image"
 import {
@@ -12,11 +11,10 @@ import {
   Layout,
   Row,
   Col,
-  WhatsappLink,
 } from "src/components/ui"
 import { H1, H2, H3, P } from "src/components/text"
 
-import { WhySectionImg, ProjectImg, ProjectCol } from "./_components"
+import { WhySectionImg, ProjectImg, ProjectCol } from "src/components/sections"
 import content from "src/content"
 
 const Home = () => {
@@ -90,7 +88,7 @@ const Home = () => {
             </P>
           </Col>
         </Row>
-        <Button>Hire me</Button>
+        <Button onClick={() => scrollTo("#contact")}>Hire me</Button>
       </Section>
       <Section id="projects" variant="secondary">
         <H2>Projects</H2>

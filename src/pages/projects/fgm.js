@@ -1,7 +1,7 @@
 import React from "react"
 import { Layout, Section, Row, Col } from "src/components/ui"
 import { H2, H3, P } from "src/components/text"
-import { ProjectImages } from "./_components"
+import { ProjectImages } from "src/components/sections"
 
 export default () => (
   <Layout>
@@ -13,7 +13,11 @@ export default () => (
         </Col>
         <Col>
           <P>
-            <a target="_blank" href="https://fgmdasorte.com.br/">
+            <a
+              target="_blank"
+              href="https://fgmdasorte.com.br/"
+              rel="noopener noreferrer"
+            >
               Project Link: Landing Page (in Portuguese)
             </a>
           </P>
@@ -24,7 +28,11 @@ export default () => (
           </P>
           <P>
             The users, after buying odontological equipment, visits{" "}
-            <a target="_blank" href="https://fgmdasorte.com.br/">
+            <a
+              target="_blank"
+              href="https://fgmdasorte.com.br/"
+              rel="noopener noreferrer"
+            >
               the campaign landing page
             </a>{" "}
             that would explain all the mechanincs of the promotion.

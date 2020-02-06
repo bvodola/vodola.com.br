@@ -1,7 +1,7 @@
 import React from "react"
 import { Layout, Section, Row, Col } from "src/components/ui"
 import { H2, H3, P } from "src/components/text"
-import { ProjectImages } from "./_components"
+import { ProjectImages } from "src/components/sections"
 
 export default () => (
   <Layout>

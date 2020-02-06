@@ -1,7 +1,7 @@
 import React from "react"
 import { Layout, Section, Row, Col } from "src/components/ui"
 import { H2, H3, P } from "src/components/text"
-import { ProjectImages } from "./_components"
+import { ProjectImages } from "src/components/sections"
 
 export default () => (
   <Layout>
@@ -13,7 +13,11 @@ export default () => (
         </Col>
         <Col>
           <P>
-            <a target="_blank" href="http://waze-voucher.herokuapp.com/">
+            <a
+              target="_blank"
+              href="http://waze-voucher.herokuapp.com/"
+              rel="noopener noreferrer"
+            >
               Project Link: Voucher System (in Portuguese)
             </a>
           </P>
@@ -29,7 +33,11 @@ export default () => (
           </P>
           <P>
             With his voucher in hands, he had to go to a{" "}
-            <a target="_blank" href="http://seguetodavidajunto.com.br/">
+            <a
+              target="_blank"
+              href="http://seguetodavidajunto.com.br/"
+              rel="noopener noreferrer"
+            >
               landing page
             </a>{" "}
             (not created by me) that would explain all the mechanincs of the
@@ -62,7 +70,5 @@ export default () => (
         images={["painel-1", "painel-2", "painel-3"]}
       />
     </Section>
-
-    <Section></Section>
   </Layout>
 )
